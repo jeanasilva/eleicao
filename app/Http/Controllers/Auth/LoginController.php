@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
 
 class LoginController extends Controller
 {
@@ -28,6 +29,8 @@ class LoginController extends Controller
      */
     protected $redirectTo = RouteServiceProvider::HOME;
 
+    protected $cpf;
+
     /**
      * Create a new controller instance.
      *
@@ -37,4 +40,25 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+
+    public function login(Request $request)
+    {
+        $input = $request->all();
+
+        $this->validate($request, [
+            'cpf'       => 'required',
+            'password'  => 'required',
+        ]);
+
+        $fieldType = filter_var($request->cpf, FILTER_VALIDATE_EMAIL) ? 'email' : 'cpf';
+        if(auth()->attempt(array($fieldType => $input['cpf'], 'password' => $input['password'])))
+        {
+            return redirect()->route('home');
+        }else{
+            return redirect()->route('login')
+                ->with('error','Email ou CPF Incorretos');
+        }
+
+    }
+
 }

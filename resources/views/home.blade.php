@@ -1,14 +1,40 @@
 @extends('layouts.app')
 
 @section('content')
+
+
+    <div class="container">
+        <div class="row justify-content-center"></div>
+
+
+
+            <!-- Collapsable Card Example -->
+            <div class="card shadow mb-4">
+                <!-- Card Header - Accordion -->
+                <a href="#collapseCardExample" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
+                  <h6 class="m-0 font-weight-bold text-primary">Meus dados</h6>
+                </a>
+                <!-- Card Content - Collapse -->
+                <div class="collapse show" id="collapseCardExample">
+                  <div class="card-body">
+                     Nome   : <strong>{{Auth::user()->name}}</strong>
+                     <hr>
+                     CPF    : <strong>{{Auth::user()->cpf}}</strong>
+                     <hr>
+                     E-mail : <strong>{{Auth::user()->email}}</strong>
+                  </div>
+                </div>
+        </div>
+
+    </div>
+
     <div class="container">
         <div class="row justify-content-center">
 
-
             <!-- Card de Eleitores -->
-            <div class="col-xl-3 col-md-6 mb-4">
+            <div class="col-xl-3 col-md-6 mb-4" a href="#collapseCardExample">
                 <div class="card border-left-primary shadow h-100 py-2">
-                    <div class="card-body">
+                    <div class="card-body" >
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Eleitores
@@ -67,22 +93,10 @@
               </div>
             </div>
 
-
-            {{-- <div class="card">
-                                    <div class="card-header bg-info text-white">{{ __('Dashboard') }}</div>
-
-                    {{--
-                                    <div class="card-body">
-                                        @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                                        @endif
-
-                                        {{ __('Você está logado como: ') }}  {{ Auth::user()->name }}
-                                    </div> --}}
         </div>
     </div>
     </div>
     </div>
+
 @endsection
+
