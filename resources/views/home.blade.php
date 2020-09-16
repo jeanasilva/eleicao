@@ -17,7 +17,7 @@
                 <!-- Card Content - Collapse -->
                 <div class="collapse show" id="collapseCardExample">
                   <div class="card-body">
-                     Nome   : <strong>{{Auth::user()->name}}</strong>
+                     Nome   : <strong>{{Auth::user()->nome}}</strong>
                      <hr>
                      CPF    : <strong>{{Auth::user()->cpf}}</strong>
                      <hr>
