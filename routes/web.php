@@ -20,5 +20,5 @@ Route::get('', 'HomeController@index')->name('home');
 
 Route::resource('candidatos', 'CandidatosController');
 Route::resource('eleitores',  'EleitoresController');
-Route::resource('perfil',     'PerfilController');
+Route::resource('pessoa',     'PessoaController');
 

@@ -22,6 +22,7 @@
                      CPF    : <strong>{{Auth::user()->cpf}}</strong>
                      <hr>
                      E-mail : <strong>{{Auth::user()->email}}</strong>
+                     <hr>
                   </div>
                 </div>
         </div>

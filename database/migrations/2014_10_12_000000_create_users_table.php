@@ -23,9 +23,6 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
 
-            $table->foreign('id')->references('id_pessoa')->on('pessoa');
-
-
         });
     }
 
