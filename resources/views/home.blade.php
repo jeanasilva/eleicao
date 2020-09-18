@@ -6,8 +6,6 @@
     <div class="container">
         <div class="row justify-content-center"></div>
 
-
-
             <!-- Collapsable Card Example -->
             <div class="card shadow mb-4">
                 <!-- Card Header - Accordion -->
@@ -62,6 +60,7 @@
                             </div>
                             <div class="col-auto">
                                 <i class="fa fa-id-badge fa-2x text-gray-300"></i>
+                                <i class="fas fa-space-station-moon-alt"></i>
                             </div>
                         </div>
                     </div>

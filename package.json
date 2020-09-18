@@ -23,9 +23,18 @@
         "popper.js": "^1.12",
         "resolve-url-loader": "^2.3.1",
         "sass": "^1.26.10",
-        "sass-loader": "^8.0.0",
+        "sass-loader": "^7.1.0",
         "vue": "^2.6.12",
-        "vue-template-compiler": "^2.6.12"
+        "vue-template-compiler": "^2.6.12",
+        "webpack": "^4.44.2"
     },
-    "dependencies": []
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.14.0",
+        "datatables": "^1.10.18",
+        "datatables.net": "^1.10.22",
+        "datatables.net-dt": "^1.10.22",
+        "node-sass": "^4.14.1",
+        "startbootstrap-sb-admin-2": "^4.1.1",
+        "vue-router": "^3.4.3"
+    }
 }

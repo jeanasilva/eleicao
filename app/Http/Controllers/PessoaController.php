@@ -15,7 +15,11 @@ class PessoaController extends Controller
      */
     public function index()
     {
+                // $usuario = User::all();
+        // return view('perfil', compact('usuario'));
 
+        $pessoa = Pessoa::all();
+        return view('perfil', compact('pessoa'));
     }
 
     /**
@@ -47,11 +51,7 @@ class PessoaController extends Controller
      */
     public function show()
     {
-        $usuario = User::all();
-        return view('perfil', compact('usuario'));
 
-        $pessoa = Pessoa::all();
-        return view('perfil', compact('pessoa'));
     }
 
     /**
