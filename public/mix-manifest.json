@@ -1,4 +1,11 @@
 {
-    "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/js/app.js": "/js/app.js?id=f16587c4d4b4295b6f1b",
+    "/css/app.css": "/css/app.css?id=4f85916cd0211fbd2fa3",
+    "/js/bootstrap.bundle.min.js": "/js/bootstrap.bundle.min.js?id=7dee20fb7c261d94d760",
+    "/js/dataTables.bootstrap4.min.js": "/js/dataTables.bootstrap4.min.js?id=c897c7124fa5b0bc3b08",
+    "/js/datatables-demo.js": "/js/datatables-demo.js?id=da6e8fb8cc50473105ec",
+    "/js/jquery.dataTables.min.js": "/js/jquery.dataTables.min.js?id=566b074d0657bdb9bff9",
+    "/js/jquery.easing.min.js": "/js/jquery.easing.min.js?id=4b7ea7a9895502391807",
+    "/js/jquery.min.js": "/js/jquery.min.js?id=5b6609e9b4eb17b6dfde",
+    "/js/sb-admin-2.js": "/js/sb-admin-2.js?id=3c6a4540878f50afb136"
 }

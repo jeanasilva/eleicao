@@ -19,7 +19,7 @@ class PessoaController extends Controller
         // return view('perfil', compact('usuario'));
 
         $pessoa = Pessoa::all();
-        return view('perfil', compact('pessoa'));
+        return view('admin/pessoa', compact('pessoa'));
     }
 
     /**
