@@ -10,4 +10,5 @@ class Pessoa extends Model
     {
         return $this->belongsTo(User::class, 'id_pessoa');
     }
+
 }

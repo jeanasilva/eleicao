@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Pessoa;
-use App\User;
 
 class PessoaController extends Controller
 {
@@ -13,11 +12,19 @@ class PessoaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
 
         $pessoa = Pessoa::all();
-        return view('admin/pessoa', compact('pessoa'));
+        return view('pessoa', compact('pessoa'));
+
+
     }
 
     /**

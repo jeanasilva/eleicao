@@ -18,7 +18,7 @@ Auth::routes();
 Route::get('home', 'HomeController@index')->name('home');
 Route::get('', 'HomeController@index')->name('home');
 
-Route::resource('candidatos', 'CandidatosController');
-Route::resource('eleitores',  'EleitoresController');
-Route::resource('admin/pessoa',     'PessoaController');
+Route::resource('candidatos',  'CandidatosController');
+Route::resource('eleitores',   'EleitoresController');
+Route::resource('pessoa','PessoaController');
 
