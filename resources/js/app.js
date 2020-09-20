@@ -5,16 +5,14 @@
  */
 
 require('./bootstrap');
-require( 'jquery');
-require( 'datatables.net');
 
 window.$('#dataTable').DataTable();
 
-// window.Vue = require('vue');
+window.Vue = require('vue');
 
-// import VueRouter from 'vue-router'
+import VueRouter from 'vue-router'
 
-// Vue.use(VueRouter)
+Vue.use(VueRouter)
 
 // let routes = [
 //     { path: '/home', component: Foo },

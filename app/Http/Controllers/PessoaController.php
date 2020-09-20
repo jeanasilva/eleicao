@@ -15,8 +15,6 @@ class PessoaController extends Controller
      */
     public function index()
     {
-                // $usuario = User::all();
-        // return view('perfil', compact('usuario'));
 
         $pessoa = Pessoa::all();
         return view('admin/pessoa', compact('pessoa'));

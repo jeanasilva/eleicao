@@ -86,21 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/startbootstrap-sb-admin-2/js/demo/datatables-demo.js":
-/*!***************************************************************************!*\
-  !*** ./node_modules/startbootstrap-sb-admin-2/js/demo/datatables-demo.js ***!
-  \***************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// Call the dataTables jQuery plugin
-$(document).ready(function() {
-  $('#dataTable').DataTable();
-});
-
-
-/***/ }),
-
 /***/ 7:
 /*!*********************************************************************************!*\
   !*** multi ./node_modules/startbootstrap-sb-admin-2/js/demo/datatables-demo.js ***!
@@ -108,7 +93,7 @@ $(document).ready(function() {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\laragon\www\eleicao\node_modules\startbootstrap-sb-admin-2\js\demo\datatables-demo.js */"./node_modules/startbootstrap-sb-admin-2/js/demo/datatables-demo.js");
+!(function webpackMissingModule() { var e = new Error("Cannot find module 'C:\\laragon\\www\\Projetos\\eleicao\\node_modules\\startbootstrap-sb-admin-2\\js\\demo\\datatables-demo.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 
 
 /***/ })

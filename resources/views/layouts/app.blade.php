@@ -15,6 +15,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="/css/all.min.css" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -97,5 +98,23 @@
             <!-- <router-view></router-view> -->
         </main>
     </div>
+
+        <!-- Bootstrap core JavaScript-->
+        <script src="{{ asset('/js/jquery.min.js') }}" defer></script>
+        <script src="{{ asset('/js/bootstrap.bundle.min.js') }}" defer></script>
+
+        <!-- Core plugin JavaScript-->
+        <script src="{{ asset('/js/jquery.easing.min.js') }}" defer></script>
+
+        <!-- Custom scripts for all pages-->
+        <script src="{{ ('/js/sb-admin-2.min.js') }}" defer></script>
+
+        <!-- Page level plugins -->
+        <script src="{{ ('/js/jquery.dataTables.min.js') }}" defer></script>
+        <script src="{{ ('/js/dataTables.bootstrap4.min.js') }}" defer></script>
+
+        <!-- Page level custom scripts -->
+        <script src="{{ ('/js/demo/datatables-demo.js') }}" defer></script>
+
 
 </body>

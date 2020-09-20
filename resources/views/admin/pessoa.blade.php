@@ -57,9 +57,9 @@
                   <tbody>
                   @foreach($pessoa as $pessoa)
                     <tr>
-                      <td>???</td>
-                      <td>???</td>
-                      <td>???</td>
+                      <td>{{ $pessoa->user->nome }}</td>
+                      <td>{{ $pessoa->user->cpf }}</td>
+                      <td>{{ $pessoa->user->email }}</td>
                       <td>{{ $pessoa->dt_nascimento }}</td>
                       <td>{{ $pessoa->sexo }}</td>
                       <td>{{ $pessoa->id_chapa }}</td>
